@@ -58,6 +58,7 @@
     function connect() {
         port.connect().then(() => {
             port.onReceive = data => {
+                console.log("is textdecoder: ", ('TextDecoder' in window).toString());
                 let textDecoder = new TextDecoder();
                 console.log("Received:", textDecoder.decode(data));
                 document.getElementById('output').value += textDecoder.decode(data);
