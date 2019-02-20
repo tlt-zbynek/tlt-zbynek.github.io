@@ -50,6 +50,7 @@
             return this.device_.close();
         };
         serial.Port.prototype.send = function(data) {
+            console.log("data: ", data);
             return this.device_.transferOut(2, data);
         };
     })();
