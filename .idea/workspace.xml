@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af0cc192-d3e0-4e20-a505-607f14124489" name="Default" comment="not receiving">
-      <change beforePath="$PROJECT_DIR$/.idea/tlt-zbynek.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tlt-zbynek.github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="af0cc192-d3e0-4e20-a505-607f14124489" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/webusb-support-check/js/serial.js" beforeDir="false" afterPath="$PROJECT_DIR$/webusb-support-check/js/serial.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +25,8 @@
       <file leaf-file-name="serial.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webusb-support-check/js/serial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="360">
+              <caret line="41" selection-start-line="41" selection-end-line="46" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -218,7 +216,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550595063896</updated>
-      <workItem from="1550595065401" duration="6105000" />
+      <workItem from="1550595065401" duration="6384000" />
     </task>
     <task id="LOCAL-00001" summary="not receiving">
       <created>1550678918239</created>
@@ -297,11 +295,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550767015129</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testing data">
+      <created>1550767394506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1550767394506</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6105000" />
+    <option name="totallyTimeSpent" value="6384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1894" y="-121" width="1592" height="1041" extended-state="0" />
@@ -449,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webusb-support-check/js/serial.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        <state relative-caret-position="360">
+          <caret line="41" selection-start-line="41" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
