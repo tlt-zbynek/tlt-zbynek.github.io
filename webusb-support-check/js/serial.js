@@ -39,16 +39,15 @@ serial.claimAllTheInterfaces = function(device) {
 serial.connect = function(device) {
     return device.open()
         .then(()=> {
-            if(device.configuration == null) {
-                return device.selectConfiguration(1);
-            }
-        })
-        .then(() => {
             device.on('data', (data) => {
 
                 var hex = data.toString('hex');
                 // do something with data...
                 console.log("hex data: ", hex);
             });
-        })
+
+            if(device.configuration == null) {
+                return device.selectConfiguration(1);
+            }
+        });
 }
