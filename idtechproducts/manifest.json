@@ -1,0 +1,11 @@
+{
+  "name": "Serial Test Utility",
+  "description": "A Chrome App for reading serial connections. Copyright 2016 ID TECH.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {  "background": { "scripts": ["background.js"] } },
+  "icons": { 	"16": "IDTechLogo16.png", 
+		"128": "IDTechLogo128.png" 
+	   },
+  "permissions": [ "browser", "serial" ]
+}

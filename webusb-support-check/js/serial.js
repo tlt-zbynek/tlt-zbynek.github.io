@@ -14,22 +14,22 @@ serial.requestDevice = function() {
  * rejected.
  */
 serial.claimAllTheInterfaces = function(device) {
-    var intfs = device.configuration.interfaces;                    
-                                                                    
-    // This naughty block makes sure that all                       
-    // interface claims are resolved                                
-    // \o/ Promises \o/                                             
-    return Promise.all(                                             
+    var intfs = device.configuration.interfaces;
+
+    // This naughty block makes sure that all
+    // interface claims are resolved
+    // \o/ Promises \o/
+    return Promise.all(
         intfs.map(interface => {
-            return device.claimInterface(interface.interfaceNumber) 
-                .catch((e) => {  
+            return device.claimInterface(interface.interfaceNumber)
+                .catch((e) => {
                     console.warn("This error is probably intended, "
                         + "can't claim all the interfaces. "
-                        + "Error: ", e, "(" + device.productName + ")"); 
-                })                                                  
-        })                                                          
-    )                                                               
-}                                                                   
+                        + "Error: ", e, "(" + device.productName + ")");
+                })
+        })
+    )
+}
 
 
 
@@ -42,5 +42,13 @@ serial.connect = function(device) {
             if(device.configuration == null) {
                 return device.selectConfiguration(1);
             }
+        })
+        .then(() => {
+            deviceHandle.on('data', (data) => {
+
+                var hex = data.toString('hex');
+                // do something with data...
+                console.log("hex data: ", hex);
+            });
         })
 }
