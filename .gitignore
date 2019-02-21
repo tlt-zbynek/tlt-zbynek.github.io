@@ -8,6 +8,8 @@ yarn-error.log*
 # Intellij
 .idea
 
+.DS_Store
+
 # Runtime data
 pids
 *.pid
