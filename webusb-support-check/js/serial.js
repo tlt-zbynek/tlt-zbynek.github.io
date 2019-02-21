@@ -44,7 +44,7 @@ serial.connect = function(device) {
             }
         })
         .then(() => {
-            deviceHandle.on('data', (data) => {
+            device.on('data', (data) => {
 
                 var hex = data.toString('hex');
                 // do something with data...
